@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://frstshop.herokuapp.com/",
   "scripts": {
-    "start": "serve -s build",
+    "start": "npx serve",
     "dev": "nodemon index.js",
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build",

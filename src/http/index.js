@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url = `https://${process.env.HOST}:${process.env.PORT}/`
+const base_url = `http://${process.env.HOST}:${process.env.PORT}/`
 const $host = axios.create({
     //baseURL: process.env.REACT_APP_API_URL
     baseURL: base_url
