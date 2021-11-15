@@ -23,6 +23,11 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'))
 })
 */
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/src/index.js'))
+})
+
 const start = async() => {
     try {
         await sequelize.authenticate()
