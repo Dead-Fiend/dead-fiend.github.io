@@ -5,10 +5,10 @@
   "homepage": "https://frstshop.herokuapp.com/",
   "main": "index.js",
   "scripts": {
-    "start": "npx serve",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "pm2 serve build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
