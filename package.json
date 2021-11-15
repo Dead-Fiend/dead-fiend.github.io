@@ -2,6 +2,7 @@
   "name": "back",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://frstshop.herokuapp.com/",
   "main": "index.js",
   "scripts": {
     "start": "npx serve",
