@@ -1,7 +1,7 @@
 import axios from "axios";
-//const base_url = process.env.REACT_APP_API_URL
+const base_url = process.env.REACT_APP_API_URL
 //const base_url = `http://${process.env.HOST}:${process.env.PORT}/`
-const base_url = `http://frstshop.herokuapp.com/`
+//const base_url = `https://frstshop.herokuapp.com/`
 const $host = axios.create({
     //baseURL: process.env.REACT_APP_API_URL
     baseURL: base_url
@@ -9,7 +9,7 @@ const $host = axios.create({
 
 const $authHost = axios.create({
 
-    //baseURL: base_url
+    baseURL: base_url
 })
 
 const authInterceptor = config => {
