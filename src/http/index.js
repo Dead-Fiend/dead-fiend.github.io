@@ -8,7 +8,8 @@ const $host = axios.create({
 })
 
 const $authHost = axios.create({
-    baseURL: base_url
+
+    //baseURL: base_url
 })
 
 const authInterceptor = config => {
