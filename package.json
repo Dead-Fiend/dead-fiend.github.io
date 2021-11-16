@@ -7,8 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "cross-env NODE_ENV=production webpack",
-    "build:inline": "cross-env NODE_ENV=production inline=true webpack",
+    "build": "react-scripts build",
     "heroku-postbuild": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
