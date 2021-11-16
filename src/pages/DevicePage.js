@@ -9,7 +9,7 @@ const DevicePage = () => {
     console.log({id})
     useEffect(() => {
         fetchOneDevice(id).then(data => setDevice(data))
-    }, [])
+    }, [id])
     return (
         <Container className={"mt-3"}>
             <Row>
