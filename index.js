@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000
 const app = express()
 app.use(cors())
 app.use(express.json())
-app.use('https://frstshop.herokuapp.com/', express.static(path.join(__dirname, 'static')))
+app.use(express.static(path.join(__dirname, 'static')))
 
 app.use(fileUpload({}))
 app.use('/api', router)
