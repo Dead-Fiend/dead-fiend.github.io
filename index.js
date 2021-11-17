@@ -19,7 +19,7 @@ app.use('/api', router)
 
 app.use(errorHandler)
 
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 const start = async() => {
